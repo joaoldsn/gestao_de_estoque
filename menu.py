@@ -1,7 +1,7 @@
 def exibir_menu():
     print("""
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃          SISTEMA DE GESTÃO DE ESTOQUE            ┃
+┃          SISTEMA DE GESTÃO DE ESTOQUE            
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
                 MENU PRINCIPAL
