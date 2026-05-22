@@ -1,4 +1,4 @@
-from menu import exibir_menu
+from gestao_de_estoque.funcoes.menu import exibir_menu
 
 while True:
 
