@@ -25,3 +25,16 @@ def cadastrar_produto(nome, categoria, preco, quantidade):
       else:
           print('Resposta inválida. Por favor, digite "sim" ou "não".')
 
+    cursor.execute("""
+    INSERT INTO produtos (nome, categoria, preco, quantidade)
+    VALUES (?, ?, ?, ?)
+    """, (nome, categoria, preco, quantidade))
+
+    conexao.commit()
+
+    produto_id = cursor.lastrowid
+
+    print("\n✅ Produto cadastrado com sucesso!")
+    print(f"📌 ID do produto: {produto_id}") 
+
+
