@@ -1,4 +1,4 @@
-def cadastrar_produto(nome, preco, quantidade):
+def cadastrar_produto(nome, categoria, preco, quantidade):
     nome = input('Digite o nome do produto: ')
     categoria = input('Digite a categoria do produto: ')
     quantidade=int(input('Digite a quantidade do produto: '))
