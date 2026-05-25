@@ -8,8 +8,17 @@ def cadastrar_produto(nome, preco, quantidade):
         'categoria': categoria,
         'quantidade': quantidade,
         'preço': preco,
-    }
+      }
 
-        estoque.append(produto)
-        print('Produto cadastrado com sucesso!')
+    decisao=input('Confirmar cadastro? (sim/não)')
+    if decisao == 'sim':
+      estoque.append(produto)
+      print('Produto cadastrado com sucesso!')
+
+    elif decisao == 'não':
+
+      print('Cadastro cancelado. Digite os dados para um novo produto.')
+
+    else:
+      print('Resposta inválida. Por favor, digite "sim" ou "não".')
 
