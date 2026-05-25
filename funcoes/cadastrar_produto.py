@@ -1,9 +1,10 @@
 def cadastrar_produto(nome, categoria, preco, quantidade):
     while True:
 
-      nome = input('Digite o nome do produto: ')
-      quantidade=int(input('Digite a quantidade do produto: '))
-      preco=float(input('Digite o preço do produto: '))
+      nome = input('Digite o nome do produto:\nVocê: ')
+      categoria = input('Digite a categoria do produto:\nVocê:  ')
+      quantidade=int(input('Digite a quantidade do produto:\nVocê:  '))
+      preco=float(input('Digite o preço do produto:\nVocê:  '))
       produto = {
           'nome': nome,
           'categoria': categoria,
@@ -11,7 +12,7 @@ def cadastrar_produto(nome, categoria, preco, quantidade):
           'preço': preco,
       }
 
-      decisao=input('Confirmar cadastro? (sim/não)')
+      decisao=input('Confirmar cadastro? (sim/não)\nVocê: ')
       if decisao == 'sim':
           estoque.append(produto)
           print('Produto cadastrado com sucesso!')
