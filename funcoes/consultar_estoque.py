@@ -11,9 +11,9 @@ def consultar_estoque():
 
     produto = cursor.fetchone()
 
-    if produto is None:
+    if produto == None:
 
-        print('\n❌ Produto não encontrado.')
+        print('\nProduto não encontrado.')
         return
 
     print('\n===== DADOS DO PRODUTO =====')
