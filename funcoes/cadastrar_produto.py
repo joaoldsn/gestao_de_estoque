@@ -1,32 +1,23 @@
 from funcoes.conexao import conexao, cursor
-def cadastrar_produto(nome, categoria, preco, quantidade):
-    while True:
 
-      nome = input('Digite o nome do produto:\nVocê: ')
-      categoria = input('Digite a categoria do produto:\nVocê:  ')
-      quantidade=int(input('Digite a quantidade do produto:\nVocê:  '))
-      preco=float(input('Digite o preço do produto:\nVocê:  '))
-      produto = {
-          'nome': nome,
-          'categoria': categoria,
-          'quantidade': quantidade,
-          'preço': preco,
-      }
+def cadastrar_produto():
 
-      decisao=input('Confirmar cadastro? (sim/não)\nVocê: ')
-      if decisao == 'sim':
-          estoque.append(produto)
-          print('Produto cadastrado com sucesso!')
-          break
+    nome = input('\nDigite o nome do produto:\nVocê:')
+    categoria = input('Digite a categoria:\nVocê: ')
+    quantidade = int(input('Digite a quantidade:\nVocê: '))
+    preco = float(input('Digite o preço:\nVocê: '))
 
-      elif decisao == 'não':
+    print('\n===== CONFIRMAÇÃO =====')
+    print(f'Nome: {nome}')
+    print(f'Categoria: {categoria}')
+    print(f'Quantidade: {quantidade}')
+    print(f'Preço: R$ {preco:.2f}')
 
-          print('Cadastro cancelado. Digite os dados para um novo produto.')
+    decisao = input('\nConfirmar cadastro? (sim/não):\nVocê: ')
 
-      else:
-          print('Resposta inválida. Por favor, digite "sim" ou "não".')
+    if decisao == 'sim':
 
-    cursor.execute("""
+        cursor.execute("""
         INSERT INTO produtos (nome, categoria, preco, quantidade)
         VALUES (?, ?, ?, ?)
         """, (nome, categoria, preco, quantidade))
@@ -41,4 +32,3 @@ def cadastrar_produto(nome, categoria, preco, quantidade):
     else:
 
         print('\nCadastro cancelado.')
-
