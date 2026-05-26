@@ -1,3 +1,4 @@
+from funcoes.conexao import conexao, cursor
 def registrar_saida():
 
     nome = input('\nDigite o nome do produto: ')
