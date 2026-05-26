@@ -2,14 +2,7 @@ from funcoes.conexao import cursor
 
 def alertar_estoque_baixo():
 
-    try:
-
-        limite = int(input('\nDigite o limite mínimo: '))
-
-    except ValueError:
-
-        print('\nDigite um número válido.')
-        return
+    limite = int(input('\nDigite o limite mínimo: '))
 
     cursor.execute("""
     SELECT * FROM produtos
@@ -18,7 +11,7 @@ def alertar_estoque_baixo():
 
     produtos = cursor.fetchall()
 
-    if not produtos:
+    if produtos == []:
 
         print('\nNenhum produto com estoque baixo.')
         return
