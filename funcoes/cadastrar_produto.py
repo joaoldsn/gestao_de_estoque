@@ -11,7 +11,7 @@ def cadastrar_produto():
     print(f'Nome: {nome}')
     print(f'Categoria: {categoria}')
     print(f'Quantidade: {quantidade}')
-    print(f'Preço: R$ {preco:.2f}')
+    print(f'Preço Unitário: R$ {preco:.2f}')   
 
     decisao = input('\nConfirmar cadastro? (sim/não):\nVocê: ')
 
