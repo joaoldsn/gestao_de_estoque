@@ -6,11 +6,10 @@ from funcoes.alerta import alertar_estoque_baixo
 from funcoes.relatorio import relatorio
 
 def menu():
-
     while True:
-    print("""
+        print("""
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃          SISTEMA DE GESTÃO DE ESTOQUE            
+┃          SISTEMA DE GESTÃO DE ESTOQUE            ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
                 MENU PRINCIPAL
@@ -26,35 +25,27 @@ def menu():
         opcao = input('\nEscolha uma opção: ')
 
         if opcao == '1':
-
             cadastrar_produto()
 
         elif opcao == '2':
-
             registrar_entrada()
 
         elif opcao == '3':
-
             registrar_saida()
 
         elif opcao == '4':
-
             consultar_estoque()
 
         elif opcao == '5':
-
             alertar_estoque_baixo()
 
         elif opcao == '6':
-
             relatorio()
 
         elif opcao == '0':
-
             print('\n Sistema encerrando...')
             break
 
         else:
-
             print('\n Opção inválida.')
     
