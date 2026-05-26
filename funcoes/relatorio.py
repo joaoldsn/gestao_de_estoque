@@ -10,7 +10,7 @@ def relatorio():
 
     if produtos == []:
 
-        print('\n📦 Nenhum produto cadastrado.')
+        print('\n Nenhum produto cadastrado.')
         return
 
     print('\n===== RELATÓRIO =====')
