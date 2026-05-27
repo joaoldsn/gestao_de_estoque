@@ -28,4 +28,4 @@ def alertar_estoque_baixo():
         print('\n-------------------')
         print(f'ID: {produto[0]}')
         print(f'Nome: {produto[1]}')
-        print(f'Quantidade: {produto[4]}')
+        print(f'Quantidade: {produto[4]} un')
