@@ -17,13 +17,21 @@ Trabalho acadêmico desenvolvido na disciplina de Programação de Computadores,
 
 # Funcionalidades implementadas
 
-Cadastrar produto, registrar entrada e saída, consultar estoque, alerta de estoque baixo, acesso ao relatório e a implementação do banco de dados SQLite3
+- Cadastrar produto
+- Registrar entrada
+- Registrar saída
+- Consultar estoque
+- Alerta de estoque baixo
+- Acesso ao relatório
+- Implementação do banco de dados SQLite3
 
 ---
 
 # Instruções de execução do código
 
-Abra a pasta do projeto no VSCode, selecione o arquivo principal (gestao_estoque.py) e execute o arquivo principal com o comando: python gestao_estoque.py
+- 1. Abra a pasta do projeto no VSCode
+- 2. Selecione o arquivo principal (gestao_estoque.py)
+- 3. Execute o arquivo principal com o comando: python gestao_estoque.py
 
 ---
 
