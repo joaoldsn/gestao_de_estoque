@@ -2,10 +2,10 @@ from funcoes.conexao import conexao, cursor
 
 def cadastrar_produto():
 
-    nome = input('\nDigite o nome do produto:\nVocê:')
-    categoria = input('Digite a categoria:\nVocê: ')
-    quantidade = int(input('Digite a quantidade:\nVocê: '))
-    preco = float(input('Digite o preço:\nVocê: '))
+    nome = input('\nDigite o nome do produto: ')
+    categoria = input('Digite a categoria: ')
+    quantidade = int(input('Digite a quantidade: '))
+    preco = float(input('Digite o preço: R$'))
 
     print('\n===== CONFIRMAÇÃO =====')
     print(f'Nome: {nome}')
@@ -13,7 +13,7 @@ def cadastrar_produto():
     print(f'Quantidade: {quantidade}')
     print(f'Preço Unitário: R$ {preco:.2f}')   
 
-    decisao = input('\nConfirmar cadastro? (sim/não):\nVocê: ')
+    decisao = input('\nConfirmar cadastro? (sim/não):\n')
 
     if decisao == 'sim':
 
@@ -29,6 +29,10 @@ def cadastrar_produto():
         print('\nProduto cadastrado com sucesso!')
         print(f'ID do produto: {produto_id}')
 
-    else:
+    elif decisao == 'não':
 
         print('\nCadastro cancelado.')
+    
+    else:
+
+        print('\nResposta inválida. Digite "sim" ou "não".')
