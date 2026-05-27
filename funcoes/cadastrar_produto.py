@@ -12,7 +12,7 @@ def cadastrar_produto():
     print('\n===== CONFIRMAÇÃO =====')
     print(f'Nome: {nome}')
     print(f'Categoria: {categoria}')
-    print(f'Quantidade: {quantidade}')
+    print(f'Quantidade: {quantidade} un')
     print(f'Preço Unitário: R$ {preco:.2f}')
 
     # Solicita a confirmação do cadastro
