@@ -25,5 +25,5 @@ def consultar_estoque():
     print(f'ID: {produto[0]}')
     print(f'Nome: {produto[1]}')
     print(f'Categoria: {produto[2]}')
-    print(f'Preço: R$ {produto[3]:.2f}')
-    print(f'Quantidade: {produto[4]}')
+    print(f'Preço Unitário: R$ {produto[3]:.2f}')
+    print(f'Quantidade: {produto[4]} un')
