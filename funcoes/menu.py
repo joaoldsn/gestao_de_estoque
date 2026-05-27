@@ -6,6 +6,8 @@ from funcoes.alerta import alertar_estoque_baixo
 from funcoes.relatorio import relatorio
 
 def menu():
+
+    # Mantém o menu em execução até que o usuário escolha sair
     while True:
         print("""
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -22,29 +24,40 @@ def menu():
     6 - Relatório
     0 - Sair
     """)
+
+        # Solicita ao usuário a opção desejada
         opcao = input('\nEscolha uma opção: ')
 
+        # Chama a função responsável por cadastrar um novo produto
         if opcao == '1':
             cadastrar_produto()
 
+        # Chama a função para registrar entrada de produtos no estoque
         elif opcao == '2':
             registrar_entrada()
 
+        # Chama a função para registrar saída de produtos do estoque
         elif opcao == '3':
             registrar_saida()
 
+        # Exibe as informações do estoque
         elif opcao == '4':
             consultar_estoque()
 
+        # Mostra os produtos com estoque abaixo do limite definido
         elif opcao == '5':
             alertar_estoque_baixo()
 
+        # Gera um relatório com todos os produtos cadastrados
         elif opcao == '6':
             relatorio()
 
+        # Encerra o sistema
         elif opcao == '0':
             print('\n Sistema encerrando...')
             break
 
+        # Executado caso o usuário digite uma opção inexistente
         else:
             print('\n Opção inválida.')
+    
