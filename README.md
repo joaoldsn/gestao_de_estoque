@@ -29,9 +29,11 @@ Trabalho acadêmico desenvolvido na disciplina de Programação de Computadores,
 
 # Instruções de execução do código
 
-- 1- Abra a pasta do projeto no VSCode
-- 2- Selecione o arquivo principal (gestao_estoque.py)
-- 3- Execute o arquivo principal com o comando: python gestao_estoque.py
+1 - Abra a pasta do projeto no VSCode
+
+2 - Selecione o arquivo principal (gestao_estoque.py)
+
+3 - Execute o arquivo principal com o comando: python gestao_estoque.py
 
 ---
 
