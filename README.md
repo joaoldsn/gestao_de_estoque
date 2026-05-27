@@ -1,22 +1,34 @@
-#Sistema de Gestão de Estoque
+# Sistema de Gestão de Estoque
 
-##Descrição do projeto
+# Descrição do projeto
 
-  Trabalho acadêmico, desenvolvido na disciplina de Programação de Computadores, apresenta a criação de um projeto de Sistema de controle de estoque para a gestão de comércio. O sistema permite o controle de produtos, cadastro, atualização e consulta de estoque, usando a modularização através de funções e com o uso de banco de dados.
-  
-##Objetivo do sistema
+Trabalho acadêmico desenvolvido na disciplina de Programação de Computadores, apresenta a criação de um projeto de Sistema de controle de estoque para a gestão de comércio. O sistema permite o controle de cadastro, atualização e consulta de estoque, usando a modularização através de funções e com o uso de banco de dados.
 
--Desenvolver um sistema de gestão de estoque em linguagem Python
--Aplicar conceitos de programação estruturada
--Manipular dados e organizar a lógica de funções
--Aplicar o uso do SQLite3
+---
+    
+# Objetivo do sistema
 
-##Funcionalidades implementadas
+- Desenvolver um sistema de gestão de estoque em linguagem Python
+- Aplicar conceitos de programação estruturada
+- Manipular dados e organizar a lógica de funções
+- Aplicar o uso do SQLite3
 
-##Instruções de execução do código
+---
 
-##Nome do aluno
+# Funcionalidades implementadas
 
--João Leite da Silva Neto
--Luiz Antônio Xavier dos Santos
--Vinícius Oliveira Araujo
+Cadastrar produto, registrar entrada e saída, consultar estoque, alerta de estoque baixo, acesso ao relatório e a implementação do banco de dados SQLite3
+
+---
+
+# Instruções de execução do código
+
+Abra a pasta do projeto no VSCode, selecione o arquivo principal (gestao_estoque.py) e execute o arquivo principal com o comando: python gestao_estoque.py
+
+---
+
+## Nome dos alunos
+
+- João Leite da Silva Neto
+- Luiz Antônio Xavier dos Santos
+- Vinícius Oliveira Araujo
