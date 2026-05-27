@@ -1,7 +1,11 @@
 import sqlite3
 
+# conexão com o banco de dados
+
 conexao = sqlite3.connect("estoque.db")
 cursor = conexao.cursor()
+
+# criar tabela de produtos
 
 def criar_tabela():
 
