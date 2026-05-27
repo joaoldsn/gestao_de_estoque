@@ -1,13 +1,6 @@
 import sqlite3
-import os
 
-caminho_banco = os.path.join(
-    os.path.dirname(__file__),
-    "..",
-    "estoque.db"
-)
-
-conexao = sqlite3.connect(caminho_banco)
+conexao = sqlite3.connect("estoque.db")
 cursor = conexao.cursor()
 
 def criar_tabela():
@@ -19,9 +12,9 @@ def criar_tabela():
         categoria TEXT NOT NULL,
         preco REAL NOT NULL,
         quantidade INTEGER NOT NULL
-    )
-    """)
+)
+""")
 
-    conexao.commit()
+conexao.commit()
 
 criar_tabela()
